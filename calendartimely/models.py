@@ -4,10 +4,10 @@ from django.urls import reverse
 # Create your models here.
 
 REPEAT = (
-    ('D', 'Daily'),
-    ('W', 'Weekly'),
-    ('M', 'Monthly'),
-    ('Y', 'Yearly'),
+('D', 'Daily'),
+('W', 'Weekly'),
+('M', 'Monthly'),
+('Y', 'Yearly'),
 )
 
 

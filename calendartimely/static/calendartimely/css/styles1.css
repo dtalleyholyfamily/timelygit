@@ -9,7 +9,7 @@
 .btn {
   outline: none;
   color: black;
-  background-color: transparent;
+  background-color: powderblue;
   box-shadow: 0 0 0 0;
 }
 
@@ -25,7 +25,7 @@
   border-radius: 5px;
   border: 1px solid #17a2b8;
   outline: none;
-  background: none;
+  background-color: powderblue;
   padding: 5px;
   width: 100%;
 }
@@ -34,29 +34,32 @@
     width: 98%;
     margin: auto;
     font-size: 13px;
+    background-color: powderblue;
   }
   
   .calendar tr, .calendar td {
-    border: 1px solid black;
+    border: 3px solid rgb(9, 74, 104);
   }
   
   .calendar th {
     padding: 10px;
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
   }
   
   .calendar td {
     width: 200px;
-    height: 150px;
+    height: 125px;
     padding: 20px 0px 0px 5px;
   }
   
   .month {
+    font-family: cursive;
     font-size: 25px;
   }
   
   .date {
+    font-family: cursive;
     font-size: 16px;
   }
   
@@ -66,5 +69,10 @@
   }
   
   a {
-    color: #17a2b8;
+    color: #0436a0;
+  }
+
+  body {
+    background-color:rgb(9, 36, 53);
+    color: rgb(24, 168, 179);
   }

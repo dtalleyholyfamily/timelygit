@@ -10,6 +10,10 @@ from .models import *
 from .utils import Calendar
 from .forms import EventForm
 
+class digitalclock(generic.ListView):
+    model = Event
+    template_name = 'calendartimely/digitalclock.html'
+
 def index(request):
     return HttpResponse('Hello, Django!')
 

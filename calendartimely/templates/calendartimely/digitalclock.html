@@ -1,0 +1,31 @@
+{% extends 'calendartimely/base.html' %}
+
+{% load static %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'calendartimely/css/digitalclock.css'%}">
+</head>
+<body>
+
+    {% block content %}
+
+    <a class="btn btn-info left" href="{% url 'calendartimely:calendar' %}"> Calendar </a>
+
+    <div class="container">
+        <div class="clock">
+            <div id="Date">Sunday 31 March 2024</div>
+
+            <ul>
+                <li id="hours">12</li>
+                <li id="point">:</li>
+                <li id="min">00</li>
+                <li id="point">:</li>
+                <li id="sec">00</li>
+            </ul>
+        </div>
+    </div>
+    {% block script %}
+    <script type="text/javascript" src="{% static 'calendartimely/js/digitalclock.js' %}"></script>
+    {% endblock %}
+</body>
+{% endblock %}

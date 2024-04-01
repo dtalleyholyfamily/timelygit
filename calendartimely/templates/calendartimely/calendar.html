@@ -3,6 +3,7 @@
 {% block content %}
 <div class="clearfix">
 	<a class="btn btn-info left" href="{% url 'calendartimely:calendar' %}?{{ prev_month }}"> Previous Month </a>
+	<a class="btn btn-info left" href="{% url 'calendartimely:digitalclock' %}"> Clock </a>
 	<a class="btn btn-info right" href="{% url 'calendartimely:calendar' %}?{{ next_month }}"> Next Month </a>
     {% if user.is_authenticated %}
 	<a class="btn btn-info right" href="{% url 'logout' %}"> Log Out </a>
